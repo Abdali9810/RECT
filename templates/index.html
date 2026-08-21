@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residuos electrónicos y consumo tecnológico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero__eyebrow">Minería de Datos · Proyecto RECT</div>
+    <h1>Residuos electrónicos <span>&amp;</span> consumo tecnológico</h1>
+    <p class="hero__lead">
+      Bitácora técnica del proyecto: cada entregable amplía esta misma aplicación Flask,
+      documentando el problema, los datos y los hallazgos a medida que avanza el análisis.
+    </p>
+    <div class="hero__meta">
+      <span class="chip">R1 · Definición del problema</span>
+      <span class="chip">8 secciones</span>
+      <span class="chip">Flask + datos abiertos</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Secciones del informe">
+    <ol>
+      <li><a href="#problema"><span class="toc__num">01</span>Problema y contexto</a></li>
+      <li><a href="#pregunta"><span class="toc__num">02</span>Preguntas de investigación</a></li>
+      <li><a href="#necesidades"><span class="toc__num">03</span>Necesidades de información</a></li>
+      <li><a href="#fuentes"><span class="toc__num">04</span>Fuentes y recolección</a></li>
+      <li><a href="#dataset"><span class="toc__num">05</span>Descripción del dataset</a></li>
+      <li><a href="#diccionario"><span class="toc__num">06</span>Diccionario de datos</a></li>
+      <li><a href="#calidad"><span class="toc__num">07</span>Diagnóstico de calidad</a></li>
+      <li><a href="#limitaciones"><span class="toc__num">08</span>Limitaciones</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section id="problema" class="card">
+      <div class="card__num">01</div>
+      <div class="card__body">
+        <h2>Problema asignado y contexto</h2>
+        <p class="hint">
+          Explica el problema de residuos electrónicos (e-waste) y consumo tecnológico asignado al
+          equipo: qué lo origina, a quién afecta y por qué es relevante analizarlo con datos.
+        </p>
+      </div>
+    </section>
+
+    <section id="pregunta" class="card">
+      <div class="card__num">02</div>
+      <div class="card__body">
+        <h2>Pregunta principal y preguntas secundarias</h2>
+        <p class="hint">Formula la pregunta central que guía el proyecto y las preguntas secundarias que se desprenden de ella.</p>
+        <div class="placeholder-block">
+          <p><strong>Pregunta principal:</strong> <span class="fill">— por definir —</span></p>
+          <p><strong>Preguntas secundarias:</strong></p>
+          <ul class="fill-list">
+            <li>—</li>
+            <li>—</li>
+            <li>—</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="necesidades" class="card">
+      <div class="card__num">03</div>
+      <div class="card__body">
+        <h2>Necesidades de información</h2>
+        <p class="hint">Lista qué datos, variables o indicadores se necesitan para responder las preguntas planteadas.</p>
+      </div>
+    </section>
+
+    <section id="fuentes" class="card">
+      <div class="card__num">04</div>
+      <div class="card__body">
+        <h2>Fuentes y tipo de recolección</h2>
+        <p class="hint">Identifica las fuentes de datos (abiertas, institucionales, encuestas propias, etc.) y el método de recolección usado.</p>
+      </div>
+    </section>
+
+    <section id="dataset" class="card">
+      <div class="card__num">05</div>
+      <div class="card__body">
+        <h2>Descripción del dataset</h2>
+        <p class="hint">Resume el dataset final: origen, cobertura temporal/geográfica, número de registros y variables.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="stat__value">—</span><span class="stat__label">registros</span></div>
+          <div class="stat"><span class="stat__value">—</span><span class="stat__label">variables</span></div>
+          <div class="stat"><span class="stat__value">—</span><span class="stat__label">periodo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="diccionario" class="card">
+      <div class="card__num">06</div>
+      <div class="card__body">
+        <h2>Diccionario de datos</h2>
+        <p class="hint">Describe cada variable del dataset: nombre, tipo, unidad y significado.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Variable</th>
+                <th>Tipo</th>
+                <th>Unidad</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="calidad" class="card">
+      <div class="card__num">07</div>
+      <div class="card__body">
+        <h2>Diagnóstico inicial de calidad</h2>
+        <p class="hint">Reporta hallazgos preliminares: valores faltantes, duplicados, inconsistencias o atípicos detectados.</p>
+      </div>
+    </section>
+
+    <section id="limitaciones" class="card">
+      <div class="card__num">08</div>
+      <div class="card__body">
+        <h2>Limitaciones encontradas</h2>
+        <p class="hint">Documenta las restricciones del proyecto: disponibilidad de datos, sesgos, alcance temporal o técnico.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Proyecto de Minería de Datos · Residuos electrónicos y consumo tecnológico</p>
+    <p class="footer__team">Richard Barajas · Jennifer Espitia · Leonardo Moscoso</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
