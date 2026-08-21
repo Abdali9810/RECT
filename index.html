@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Minería de Datos - Residuos Electrónicos</title>
+</head>
+<body>
+    <h1>Calculadora de Residuos Electrónicos (E-Waste)</h1>
+    
+    <label for="dispositivos">Dispositivos adquiridos por año:</label><br>
+    <input type="number" id="dispositivos" value="3"><br><br>
+
+    <label for="vida_util">Años promedio de vida útil por dispositivo:</label><br>
+    <input type="number" id="vida_util" value="2"><br><br>
+
+    <button onclick="calcularEWaste()">Predecir Residuos</button>
+
+    <h2>Resultado: <span id="resultado">-</span> kg/año</h2>
+
+    <script>
+        async function calcularEWaste() {
+            const dispositivos = document.getElementById('dispositivos').value;
+            const vida_util = document.getElementById('vida_util').value;
+
+            const response = await fetch('/api/predict', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ dispositivos, vida_util })
+            });
+
+            const data = await response.json();
+            if (data.status === 'success') {
+                document.getElementById('resultado').innerText = data.estimacion_ewaste_kg;
+            } else {
+                alert('Error al calcular');
+            }
+        }
+    </script>
+</body>
+</html>
