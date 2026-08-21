@@ -17,8 +17,7 @@ __pycache__/
 CLAUDE.md
 
 # Editor
-.vscode/*
-!.vscode/launch.json
+.vscode/
 
 # SO
 .DS_Store
