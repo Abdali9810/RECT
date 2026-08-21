@@ -1,0 +1,25 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Variables de entorno / secretos
+.env
+.env.*
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Editor
+.vscode/*
+!.vscode/launch.json
+
+# SO
+.DS_Store
+Thumbs.db
